@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="min-h-screen px-7 md:pt-0 z-[9999] md:py-0 pt-[155px] flex items-center justify-center">
+        <div
+            class="accordion-box shadow-custom relative md:flex md:gap-[20px] h-fit xl:gap-[88px] md:items-center  md:justify-end  relative rounded-[25px] bg-white w-full md:w-[921px] md:pt-0 md:pb-0 pt-[140px] pb-[52px]">
+            <div class="accordion-box-top md:hidden">
+                <div
+                    class="top-photo flex justify-center absolute w-full -translate-y-[60%] top-0 left-0 z-[999] px-[42px]">
+                    <div class="w-fit relative">
+                        <img class="w-[240px]" src="./images/illustration-woman-online-mobile.svg" alt="">
+                        <div class="mobile-bg absolute w-full top-0 translate-y-[115px] py-[80px]"></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-[32px] py-6 font-bold -translate-y-[14px] textVerydarkdesaturatedblue">FAQ</h1>
+                </div>
+            </div>
+            <div class="box-left hidden md:block overflow-hidden top-0 left-0 absolute h-full w-full">
+                <div class="bg-pattern relative flex items-center justify-end h-full w-full z-[9]">
+                    <img src="./images/illustration-woman-online-desktop.svg" alt="">
+
+                </div>
+            </div>
+            <div class="box-left hidden md:block top-0 left-0 absolute h-full w-full">
+                <div class="left__inner relative flex items-center justify-end h-full w-full z-[9]">
+
+                    <img src="./images/illustration-box-desktop.svg"
+                        class="absolute  top-1/2 -translate-y-[50px] left-1/2" alt="">
+                </div>
+            </div>
+
+            <div
+                class="accordion-box-right  z-[999] md:pb-[74px]  md:pt-[54px] md:pr-[96px] px-6 md:px-0 md:shrink-0 md:w-fit">
+                <div class="text-start hidden md:block">
+                    <h1 class="text-[32px] py-6 md:py-4 font-bold textVerydarkdesaturatedblue">FAQ</h1>
+                </div>
+                <div class="accordion md:pb-0 md:w-[352px]">
+                    <div class="accordion-item">
+                        <div class="accordion-button items-center flex justify-between">
+                            <p class="w-full"> How many team members can I invite?</p>
+                            <button class="shrink-0">
+                                <img src="./images/icon-arrow-down.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="accordion-content">
+                                You can invite up to 2 additional users on the Free plan. There is no limit on
+                                team members for the Premium plan.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item active">
+                        <div class="accordion-button items-center flex justify-between">
+                            <p class="w-full">
+                                What is the maximum file upload size?
+                            </p>
+                            <button class="shrink-0">
+                                <img src="./images/icon-arrow-down.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="accordion-content">
+                                No more than 2GB. All files in your account must fit your allotted storage space.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-button items-center flex justify-between">
+                            <p class="w-full">
+                                How do I reset my password?
+                            </p>
+                            <button class="shrink-0">
+                                <img src="./images/icon-arrow-down.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="accordion-content">
+                                Click “Forgot password” from the login page or “Change password” from your profile page.
+                                A reset link will be emailed to you. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-button items-center flex justify-between">
+                            <p class="w-full">
+                                Can I cancel my subscription?
+                            </p>
+                            <button class="shrink-0">
+                                <img src="./images/icon-arrow-down.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="accordion-content">
+                                Yes! Send us a message and we’ll process your request no questions asked.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-button items-center flex justify-between">
+                            <p class="w-full">
+                                Do you provide additional support?
+                            </p>
+                            <button class="shrink-0">
+                                <img src="./images/icon-arrow-down.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="accordion-body">
+                            <div class="accordion-content">
+                                Chat and email support is available 24/7. Phone lines are open during normal business
+                                hours.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./app.js"></script>
+
+    <footer class="py-4 text-center bg-slate-200 text-sm text-slate-800">
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/ahonkazi"><span class="text-rose-500">Ahon Kazi</span></a>.
+        </div>
+    </footer>
+</body>
+
+</html>
